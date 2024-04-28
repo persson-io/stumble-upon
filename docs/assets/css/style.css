@@ -21,34 +21,42 @@ main {
 }
 
 .bounty-link {
-    text-decoration: none; /* Removes underline from links */
-    color: inherit; /* Ensures text colors are inherited from parent elements */
-    display: inline-block; /* Makes the link a block element, allowing it to fill its container */
-    align-items: center;
-    width: 100%; /* Ensures the link fills the full width of its parent */
+    text-decoration: none;
+    /* Removes underline from links */
+    color: inherit;
+    /* Ensures text colors are inherited from parent elements */
+    display: block;
+    /* Makes the link a block element, allowing it to fill its container */
+    width: 60%;
+    /* Ensures the link fills the full width of its parent */
 }
 
 
-.bounty-link:focus, .bounty-link:hover {
-    outline: 2px solid #0056b3; /* Highlight focus for accessibility */
+.bounty-link:focus,
+.bounty-link:hover {
+    outline: 2px solid #0056b3;
+    /* Highlight focus for accessibility */
 }
 
 .bounty {
     display: flex;
     align-items: center;
-    justify-content: start; /* Ensures contents are aligned to the start of the flex container */
+    justify-content: start;
+    /* Ensures contents are aligned to the start of the flex container */
     padding: 15px;
     margin: 10px;
-    width: 60%; /* Adjusts width to account for padding and margin */
+    width: calc(100% - 55px);
+    /* Adjusts width to account for padding and margin */
     background: white;
     border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-decoration: none;
 }
 
 
 .bounty img {
-    flex-shrink: 0; /* Prevents the image from shrinking */
+    flex-shrink: 0;
+    /* Prevents the image from shrinking */
     width: 100px;
     height: 100px;
     object-fit: contain;
@@ -56,9 +64,12 @@ main {
 }
 
 .bounty-info {
-    flex-grow: 1; /* Allows the text container to expand and fill the space */
-    overflow: hidden; /* Prevents text overflow */
-    min-width: 100px; /* Ensures the text block doesn't become too narrow */
+    flex-grow: 1;
+    /* Allows the text container to expand and fill the space */
+    overflow: hidden;
+    /* Prevents text overflow */
+    min-width: 100px;
+    /* Ensures the text block doesn't become too narrow */
 }
 
 
