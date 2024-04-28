@@ -21,6 +21,9 @@ main {
 }
 
 .bounty-link {
+    min-width: 300px;
+    /* Minimum width the container can shrink to */
+    max-width: 600px;
     text-decoration: none;
     /* Removes underline from links */
     color: inherit;
@@ -40,6 +43,9 @@ main {
 
 .bounty {
     display: flex;
+    min-width: 245px;
+    /* Minimum width the container can shrink to */
+    max-width: 600px;
     align-items: center;
     justify-content: start;
     /* Ensures contents are aligned to the start of the flex container */
@@ -68,7 +74,7 @@ main {
     /* Allows the text container to expand and fill the space */
     overflow: hidden;
     /* Prevents text overflow */
-    min-width: 100px;
+    min-width: 10px;
     /* Ensures the text block doesn't become too narrow */
 }
 
