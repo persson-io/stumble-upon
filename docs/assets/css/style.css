@@ -20,16 +20,28 @@ main {
     justify-content: space-around;
 }
 
+.bounty-link {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Ensures text colors are inherited from parent elements */
+    display: block; /* Makes the link a block element, allowing it to fill its container */
+}
+
+.bounty-link:focus, .bounty-link:hover {
+    outline: 2px solid #0056b3; /* Highlight focus for accessibility */
+}
+
 .bounty {
-    background: white;
-    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
     padding: 15px;
     margin: 10px;
-    width: 30%;
+    width: 30%; /* Adjust width as necessary */
+    background: white;
+    border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    display: flex; /* Enables flexbox layout */
-    align-items: center; /* Centers items vertically */
+    text-decoration: none; /* Ensures no underline appears within the bounty */
 }
+
 
 .bounty img {
     background-color: #f4f4f4; /* Adds a background color to the image */
