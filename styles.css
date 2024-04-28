@@ -29,6 +29,13 @@ main {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.bounty img {
+    width: 100%;  /* Makes the image take the full width of its container */
+    height: auto; /* Keeps the image's aspect ratio intact */
+    aspect-ratio: 1 / 1; /* Ensures the image is always square */
+    object-fit: cover;  /* Ensures the image covers the area without distortion */
+}
+
 footer {
     text-align: center;
     padding: 10px 0;
