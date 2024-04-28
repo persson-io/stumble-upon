@@ -38,7 +38,7 @@ main {
     justify-content: start; /* Ensures contents are aligned to the start of the flex container */
     padding: 15px;
     margin: 10px;
-    width: 100%; /* Adjusts width to account for padding and margin */
+    width: 60%; /* Adjusts width to account for padding and margin */
     background: white;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
