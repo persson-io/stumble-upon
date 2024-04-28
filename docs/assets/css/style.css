@@ -24,7 +24,7 @@ main {
     text-decoration: none; /* Removes underline from links */
     color: inherit; /* Ensures text colors are inherited from parent elements */
     display: block; /* Makes the link a block element, allowing it to fill its container */
-    width: 100%; /* Ensures the link fills the full width of its parent */
+    width: 60%; /* Ensures the link fills the full width of its parent */
 }
 
 
