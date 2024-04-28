@@ -24,7 +24,9 @@ main {
     text-decoration: none; /* Removes underline from links */
     color: inherit; /* Ensures text colors are inherited from parent elements */
     display: block; /* Makes the link a block element, allowing it to fill its container */
+    width: 100%; /* Ensures the link fills the full width of its parent */
 }
+
 
 .bounty-link:focus, .bounty-link:hover {
     outline: 2px solid #0056b3; /* Highlight focus for accessibility */
@@ -33,28 +35,29 @@ main {
 .bounty {
     display: flex;
     align-items: center;
+    justify-content: start; /* Ensures contents are aligned to the start of the flex container */
     padding: 15px;
     margin: 10px;
-    width: 30%; /* Adjust width as necessary */
+    width: calc(30% - 20px); /* Adjusts width to account for padding and margin */
     background: white;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-decoration: none; /* Ensures no underline appears within the bounty */
+    text-decoration: none;
 }
 
 
 .bounty img {
-    background-color: #f4f4f4; /* Adds a background color to the image */
-    display: block; /* Makes it easier to center vertically */
-    margin: auto; /* Centers the image horizontally within the area */
-    width: 100px;  /* Fixed width */
-    height: 100px; /* Fixed height, makes the image square */
-    object-fit: contain; /* Ensures the image covers the square area */
-    margin-right: 15px; /* Adds some space between the image and the text */
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 15px;
 }
 
 .bounty-info {
-    flex-grow: 1; /* Allows the text container to fill the rest of the space */
+    flex-grow: 1; /* Allows the text container to expand and fill the space */
+    overflow: hidden; /* Prevents text overflow */
+    min-width: 100px; /* Ensures the text block doesn't become too narrow */
 }
 
 
