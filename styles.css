@@ -32,9 +32,12 @@ main {
 }
 
 .bounty img {
+    background-color: #f4f4f4; /* Adds a background color to the image */
+    display: block; /* Makes it easier to center vertically */
+    margin: auto; /* Centers the image horizontally within the area */
     width: 100px;  /* Fixed width */
     height: 100px; /* Fixed height, makes the image square */
-    object-fit: cover; /* Ensures the image covers the square area */
+    object-fit: contain; /* Ensures the image covers the square area */
     margin-right: 15px; /* Adds some space between the image and the text */
 }
 
