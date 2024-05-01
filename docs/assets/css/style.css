@@ -16,6 +16,10 @@ header {
 main {
     padding: 20px;
     display: flex;
+    flex-direction: column;
+    /* Stacks children vertically */
+    align-items: center;
+    /* Aligns children in the center horizontally */
     flex-wrap: wrap;
     justify-content: space-around;
 }
