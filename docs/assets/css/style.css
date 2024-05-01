@@ -22,6 +22,7 @@ main {
     /* Aligns children in the center horizontally */
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 60px;
 }
 
 .bounty-link {
@@ -130,6 +131,8 @@ main {
 
 
 footer {
+    height: 40px;
+    /* Explicit height for the footer */
     text-align: center;
     padding: 10px 0;
     background: #0073e6;
