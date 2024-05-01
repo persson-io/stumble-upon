@@ -27,14 +27,14 @@ main {
 .bounty-link {
     min-width: 300px;
     /* Minimum width the container can shrink to */
-    max-width: 600px;
+    max-width: 660px;
     text-decoration: none;
     /* Removes underline from links */
     color: inherit;
     /* Ensures text colors are inherited from parent elements */
     display: block;
     /* Makes the link a block element, allowing it to fill its container */
-    width: 60%;
+    width: 100%;
     /* Ensures the link fills the full width of its parent */
 }
 
@@ -49,17 +49,17 @@ main {
     display: flex;
     min-width: 245px;
     /* Minimum width the container can shrink to */
-    max-width: 600px;
+    max-width: 660px;
     align-items: center;
     justify-content: start;
     /* Ensures contents are aligned to the start of the flex container */
     padding: 15px;
     margin: 10px;
-    width: calc(100% - 55px);
+    width: calc(100% - 50px);
     /* Adjusts width to account for padding and margin */
     background: white;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-decoration: none;
 }
 
@@ -67,8 +67,8 @@ main {
 .bounty img {
     flex-shrink: 0;
     /* Prevents the image from shrinking */
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
     margin-right: 15px;
 }
@@ -87,12 +87,14 @@ main {
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 15px;  /* Creates consistent spacing between form elements */
+    gap: 5px;
+    /* Creates consistent spacing between form elements */
 }
+
 #add-bounty-form input[type="text"],
 #add-bounty-form input[type="number"] {
     width: 100%;
@@ -100,13 +102,30 @@ main {
     margin: 5px 0;
     border: 2px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect the width */
 }
 
 #add-bounty-form input[type="text"]:focus,
 #add-bounty-form input[type="number"]:focus {
     border-color: #007BFF;
-    outline: none; /* Removes the default focus outline and replaces it with a border color change */
+    outline: none;
+    /* Removes the default focus outline and replaces it with a border color change */
+}
+
+#add-bounty-form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-bounty-form button:hover {
+    background-color: #0056b3;
+    /* Darker shade when hovered */
 }
 
 
