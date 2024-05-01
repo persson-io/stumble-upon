@@ -22,7 +22,7 @@ main {
     /* Aligns children in the center horizontally */
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 
 .bounty-link {
